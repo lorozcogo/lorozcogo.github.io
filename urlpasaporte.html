@@ -3,8 +3,8 @@
 <head>
   <script>
     function checkUrl() {
-      var initialUrl = "https://sedeelectronica.antioquia.gov.co/pasaporte/";
-      var finalUrl = "https://sedeelectronica.antioquia.gov.co/pasaporte/";
+      var initialUrl = "https://sedeelectronica.antioquia.gov.co/pasaporte/user/pago/";
+      var finalUrl = "https://sedeelectronica.antioquia.gov.co/pasaporte/user/pago/";
 
       setInterval(function() {
         var xhr = new XMLHttpRequest();
@@ -14,7 +14,7 @@
             if (xhr.status === 200) {
               var currentUrl = xhr.responseURL;
               if (currentUrl === finalUrl) {
-                alert("The final URL is now available!");
+                alert("Compaaa corre a pagar el pasaporte!!!!");
                 clearInterval(intervalId);
               } else if (currentUrl !== initialUrl) {
                 console.log("The URL has been redirected to: " + currentUrl);
